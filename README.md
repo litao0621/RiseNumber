@@ -15,6 +15,15 @@ risenumberview
 .setDuration(1500 def)
 .start();
 ```
+```xml
+    <com.yourpackagename.risenumber.RiseNumberTextView
+                android:id="@+id/out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#FF80AB"
+                />
+```
 and copy this into your `libs` directory.
 -   [`NineOldAndroid-2.4.0`](https://github.com/daimajia/AndroidViewAnimations/releases/download/v1.0.6/NineOldAndroid-2.4.0.jar)
 
