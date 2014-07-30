@@ -110,9 +110,16 @@ public class RiseNumberTextView extends TextView implements RiseNumberBase{
             if (x <= sizeTable[i])
                 return i + 1;
     }
+
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+        fnum=   new DecimalFormat("##0.00");
+    }
+
     @Override
     public void start() {
-        fnum=   new DecimalFormat("##0.00");
+
         if (!isRunning()) {
             mPlayingState = RUNNING;
             if (numberType==1)
